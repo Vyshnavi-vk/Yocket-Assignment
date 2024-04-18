@@ -31,7 +31,7 @@ const SelectOptions = ({ options, cops, setCops, copIndx, cop }) => {
                 const distance = Cities[cityIndx].distance
                 const vehicleKind = cops[copIndx].selectedVehicle
 
-                await axios.post('http://localhost:5000/api/cop//is-suitable-vehicle', { vehicleKind, distance })
+                await axios.post('https://yocket-assignment-aw1d.onrender.com/api/cop//is-suitable-vehicle', { vehicleKind, distance })
 
             } catch (error) {
                 if (error.response && error.response.data && error.response.data.canSelect === false) {

@@ -20,7 +20,7 @@ const Home = () => {
 
     const handleSubmit = async () => {
         try {
-            const { data } = await axios.get('http://localhost:5000/api/city/get-city')
+            const { data } = await axios.get('https://yocket-assignment-aw1d.onrender.com/api/city/get-city')
             const criminalCity = data.city
             const winner = cops.filter((cop) => cop.selectedCity === criminalCity)
 
