@@ -26,7 +26,7 @@ const isSuitableVehicle = async (req, res) => {
             'utf-8'
         )
 
-        res.json({ vehicle: Vehicles, canSelect: true })
+        res.status(200).json({ vehicle: Vehicles, canSelect: true })
 
     }
     else {
